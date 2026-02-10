@@ -1,6 +1,6 @@
 package Polimorfismo;
 
-public class Animal {
+public abstract class Animal {
     private String nome;
 
     public Animal(String nome){
@@ -11,7 +11,5 @@ public class Animal {
         return nome;
     }
 
-    public void fazerSom(){
-        System.out.println(this.nome + " faz um som genérico.");
-    }
+   public abstract void fazerSom();
 }
